@@ -1,0 +1,4 @@
+[31-Mar-2016 18:08:55 Europe/Helsinki] PHP Notice:  Undefined index: id in /home/evromisto/public_html/sm_admin/views/blocks/changeOrder.php on line 3
+[31-Mar-2016 18:08:55 Europe/Helsinki] PHP Warning:  Invalid argument supplied for foreach() in /home/evromisto/public_html/sm_admin/views/blocks/changeOrder.php on line 8
+[31-Mar-2016 18:09:17 Europe/Helsinki] PHP Notice:  Undefined index: id in /home/evromisto/public_html/sm_admin/views/blocks/changeOrder.php on line 3
+[31-Mar-2016 18:09:17 Europe/Helsinki] PHP Warning:  Invalid argument supplied for foreach() in /home/evromisto/public_html/sm_admin/views/blocks/changeOrder.php on line 8

@@ -1,0 +1,196 @@
+@import url("http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic");
+/* СТИЛЬ СКРОЛЛБАРА ==================== */
+::-webkit-scrollbar {width: 5px; background: rgba(255,255,255,0.8);}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #fc0;}
+::-moz-scrollbar {width: 5px; background: rgba(255,255,255,0.8);}
+::-moz-scrollbar-track {background: none;}
+::-moz-scrollbar-thumb {background: #fc0;}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+html, body {width: 100%;}
+a:focus, input:focus, textarea:focus {outline: none;}
+body {font-family: 'Ubuntu Condensed', sans-serif; color: #444; font-size: 14px; background: #eee;}
+
+input {font-family: 'Ubuntu Condensed', sans-serif;}
+h1 {font-size: 20px;}
+a {text-decoration: none; transition: 0.3s; color: #444; cursor: pointer;}
+contentainer, header, content, footer, div {display: block; position: relative;}
+
+contentainer {position: absolute; width: 100%; min-height: 100%; background: url(../images/ground.jpg);}
+/*-- АВТОРИЗФЦИЯ --*/
+.autorization {position: fixed; display: block; width: 100%; height: 100%; background: url(../images/start-image.jpg) no-repeat top left; background-size: cover;}
+.autorization div {position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; width: 410px; height: 310px; background: #eee; border-top: 5px solid #fc0; box-shadow: 0 0 40px rgba(0,0,0,0.3);}
+.autorization div h3 {position: relative; padding: 20px 0 20px 60px; font-size: 18px; background: #fff url(../images/logo.png) no-repeat 20px center;}
+.autorization form {position: relative; display: block; width: calc(100% - 122px); height: calc(100% - 120px); padding: 20px 50px; margin: 10px; border: 1px dotted #ddd;}
+.autorization form input {position: relative; margin: 10px auto; padding: 10px; width: 250px; font-size: 18px; border: 1px solid #ddd; color: #555; box-shadow: 0 0 20px rgba(0,0,0,0.05) inset;}
+.autorization form pre {}
+.autorization form input[type='submit'] {width: 100px; margin-top: 10px; padding: 8px; background: #fc0; transition: 0.3s; border: 1px solid #fff; box-shadow: 0 0 30px rgba(0,0,0,0.05);}
+.autorization form input[type='submit']:hover {box-shadow: 0 0 30px rgba(0,0,0,0.2); cursor: pointer;}
+/*-- ШАПКА --*/
+header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+    background: linear-gradient(#444, #222);
+    border-left: 5px solid #fc0;
+    border-bottom: 1px dotted #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+    header h3 {
+        position: absolute;
+        top: 4px;
+        left: 15px;
+        padding: 10px 0 10px 40px;
+        color: #fc0;
+        font-size: 20px;
+        background: url(../images/logo.png) no-repeat left center;
+    }
+    header div p {
+        position: absolute;
+        top: 7px;
+        right: 75px;
+        padding: 9px 15px;
+        border: 1px dotted #aaa;
+        color: #eee;
+    }
+    header div a {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        padding: 9px 10px;
+        background: #fc0;
+        border: 1px solid #fff;
+        color: #333;
+    }
+    header div a:hover {
+        background: #fe0;
+        text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    }
+.headMenu {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    background: url(../images/image.jpg) no-repeat top center;
+    border-bottom: 1px solid #aaa;
+    background-size: cover;
+}
+.headMenu img {position: absolute; width: 200px; right: 60px; top: 60px; opacity: 0.7;}
+/*-- СОДЕРЖИМОЕ --*/
+content {width: calc(100% - 20px); padding: 0 10px 70px; min-height: calc(100% - 300px);}
+    
+content .left, content .right {display: inline-block; top: 20px;}
+
+content .left {left: 10px; width: 270px; float: left;}
+content .left:after {content: "."; visibility: hidden; display: block; height: 0; clear: both;}
+content .left .menu {width: calc(100% - 20px); border: 1px solid #ddd; background: rgba(255,255,255,0.7); padding: 10px; margin-bottom: 10px; transition: 0.3s;}
+.menu:hover {box-shadow: 0 0 20px rgba(0,0,0,0.3);}
+.menu li {border-bottom: 1px solid #ddd; border-top: 1px solid #fff; transition: 0.3s;}
+.menu li a {display: block; padding: 10px; width: calc(100% - 20px); border: none;}
+.menu li:hover {text-shadow: 1px 1px 1px #fff; background: linear-gradient(#fff,#eee);}
+.menu li ul {position: absolute; display: none; background: linear-gradient(#eee,#fff); padding: 0 5px 5px 5px; width: calc(100% - 30px); box-shadow: 0 10px 15px rgba(0,0,0,0.4); transition: 0.3s;}
+.menu li:hover ul {display: block; height: auto;}
+.menu li ul li {text-shadow: none; border: none; background: #555; border-bottom: 1px solid #666;}
+.menu li ul li:last-child {border-bottom: none;}
+.menu li ul li a {color: #eee;}
+.menu li ul li:hover {background: #666;}
+.menu li ul li:hover a {text-shadow: none;}
+.menu .part {height: 2px; background: #eee; border: none; border-bottom: 1px solid #fff;}
+.menu .part:hover {background: #eee;}
+content .left h1 {padding: 10px; background: linear-gradient(#777,#444); text-align: center; border-bottom: 3px solid #fc0; text-shadow: 0 0 20px rgba(0,0,0,0.5); color: #eee;}
+
+content .right {width: calc(100% - 330px); border: 1px dotted #bbb; padding: 10px; left: 30px;}
+content .right h1 {margin-bottom: 10px; padding: 10px 15px; border: 1px solid #999; background: linear-gradient(#aaa,#999); text-shadow: 0 0 20px rgba(0,0,0,0.5); color: #eee;}
+content .right h1 span {border: 1px dotted #eee; padding: 5px 10px; margin: 0 10px;}
+/*content .right .work {width: calc(100% - 10px); padding: 5px; border: 1px solid #ddd; background: rgba(255,255,255,0.7);}*/
+
+
+
+.work form {width: calc(100% - 10px); height: calc(100% - 15px); border: 1px solid #ddd; padding: 5px; margin-bottom: 5px; overflow: hidden; }
+.work form pre {width: 100%; border-top: 1px solid #ddd; border-bottom: 1px solid #fff; clear: both;}
+.work form .addTitle {padding: 10px 15px 10px 30px; margin-bottom: 5px; background: #ddd url(../images/add.png) no-repeat 10px center;}
+.work form .editTitle {padding: 10px 15px 10px 35px;margin-bottom: 5px; background: #ddd url(../images/edit.png) no-repeat 10px center; font-size: 18px;}
+.work form input, textarea, select {margin: 5px; padding: 5px; border: 1px solid #ddd; color: #555; font-size: 16px; font-family: 'Ubuntu Condensed', sans-serif;}
+.work form label {}
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder {color: #999; font-family: 'Ubuntu Condensed', sans-serif;}
+::-moz-input-placeholder, ::-moz-textarea-placeholder {color: #999; font-family: 'Ubuntu Condensed', sans-serif;}
+::-ms-input-placeholder, ::-ms-textarea-placeholder {color: #999; font-family: 'Ubuntu Condensed', sans-serif;}
+.work form input[type='date'] {padding: 2px 5px;}
+.work form .newsFotos input[type='checkbox'] {position: absolute; width: 25px; height: 25px; right: 0px; top: 0; border-radius: 0; border: none;}
+.work form textarea {width: calc(100% - 22px); resize: none; min-height: 100px;}
+.work form input[type='submit'] {padding: 10px 15px 10px 30px; width: 100px; margin-bottom: 5px; background: #eee url(../images/save.png) no-repeat 10px center;}
+.work form input[type='button'] {padding: 10px 15px 10px 30px; width: 100px; margin-bottom: 5px; background: #eee url(../images/save.png) no-repeat 10px center;}
+.work form input.del {padding: 10px 15px 10px 30px; width: 100px; margin-bottom: 5px; background: #eee url(../images/del.png) no-repeat 10px center;}
+.work form input[type='file'] {padding: 10px 15px 10px 30px; width: 300px; font-size: 14px; margin-bottom: 5px; background: #eee url(../images/add.png) no-repeat 10px center;}
+.work form input[type='submit']:hover {background-color: #ddd; cursor: pointer;}
+.work form input[type='button']:hover {background-color: #ddd; cursor: pointer;}
+.selectDate input[type='submit'] {margin-top: 5px; position: absolute;}
+.selectDate input[type='date'] {font-size: 20.5px;}
+.select {padding: 5px; border: 1px dotted #eee;}
+.editWindow label {display: block; width: 100px; padding: 7px 10px 5px; margin-top: 5px; text-align: right; float: left;}
+.editWindow input {width: calc(100% - 200px);}
+.any form span {display: block; width: calc(25% - 27px); padding: 0 10px; margin: 0 5px 5px 0; border: 1px solid #ddd; float: left;}
+.any form span:hover {background: #eee;}
+.box {display: block; width: 60px; padding: 3px 5px 5px; margin: 0 0 5px 5px; float: left; border: 1px solid #ddd;}
+.work form input[type='radio'] {padding: 5px; width: 20px;}
+
+#edit, #delete, #save, #add, #user {display: block; margin-left: 5px; width: 24px; height: 24px; float: left; border: 1px solid #ddd; background-repeat: no-repeat; background-position: center; background-color: #eee;}
+#delete {background-image: url(../images/del.png);}
+#edit {background-image: url(../images/edit.png);}
+#edit:hover, #delete:hover, #save:hover, #add:hover, #user:hover {background-color: #fff;}
+
+table.list {width: 100%; border: 1px solid #aaa; background: rgba(0,0,0,0.02); margin-bottom: 5px;}
+.list thead {background: #aaa; color: #eee;}
+.list thead td {border-left: 1px dotted #ddd; padding: 10px 10px; text-align: center;}
+.list tbody td {padding: 5px 10px; text-align: center; vertical-align: middle; border: 1px solid #ddd; background-size: cover; background-repeat: no-repeat; background-position: center;}
+.list tbody tr:nth-child(even) {background: rgba(0,0,0,0.01);}
+.list tbody tr:hover {background: rgba(255,255,255,0.6);}
+.list tbody td:hover {background-color: rgba(255,255,255,0.9);}
+.list tbody td:last-child {width: 65px;}
+.list tbody input {padding: 10px; border: none; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.2) inset;}
+
+.list tbody .button {position: relative; display: table-cell; opacity: 0.5; box-shadow: none; border: 1px dotted #ddd; padding: 5px; width: 20px; height: 20px; cursor: pointer; background-repeat: no-repeat; background-position: center;}
+.list tbody .button:hover {opacity: 1;}
+.list tbody .save {background-image: url(../images/save.png);}
+.list tbody .add {background-image: url(../images/add.png);}
+.list tbody .del {background-image: url(../images/del.png);}
+.list tbody .edit {background-image: url(../images/edit.png);}
+
+.selection {width: calc(25% - 10px); padding: 20px 0; margin: 0 10px 10px 0; text-align: center; font-size: 14px; float: left; border-bottom: 3px solid #ddd; background-color: #fff; background-image: url(../images/edit.png); background-position: 10px 10px; background-repeat: no-repeat; box-shadow: 0 0 15px rgba(0,0,0,0.1), inset 0 0 20px rgba(0,0,0,0.05);}
+.selection:hover {border-bottom: 3px solid #fc0; -webkit-animation: ring 1s infinite; box-shadow: 0 0 20px rgba(0,0,0,0.2);}
+@-webkit-keyframes ring { 0% {background-position: 10px 10px;} 100% {background-position: 20px 10px;} }
+
+.edit {display: none; position: fixed; width: 900px; padding: 20px; background: rgba(255,255,255,0.95); box-shadow: 0 0 50px rgba(0,0,0,0.5); margin: auto; left: 0; right: 0; top: 0; bottom: 0; z-index: 99;}
+.edit .close {position: absolute; padding: 10px 15px; right: 0; top: -34px; background: #bbb; color: #fff;}
+.edit .close:hover {cursor: pointer; background: #fc0;}
+.bigText {}
+.seo {height: 365px;}
+
+.langButton {position: absolute; display: block; top: 10px; right: 10px;}
+.langButton .ru, .ua {display: table-cell; padding: 8px 10px; background: #bbb; color: #fff; cursor: pointer;}
+.langButton .ru:hover, .ua:hover {background: #fc0;}
+.langButton div:first-child {border-right: 2px solid #ddd;}
+.langButton .active {background: #fc0;}
+.work #lang_ua {display: none;}
+
+.message {padding: 10px;}
+.message h2 {font-size: 20px; margin: 5px 0;}
+.message p {margin: 5px 0; font-size: 16px;}
+.message ul {list-style: square; padding: 20px; line-height: 20px; margin: 10px 0; border: 1px solid #ddd;}
+.message ul li {margin-left: 10px;}
+
+.newsEdit {position: relative; margin: 5px 0 -75px 180px; height: 120px; padding: 5px; border: 1px solid #ddd; background: #fff;}
+.newsFotos {width: calc(20% - 10px); height: 150px; margin: 0 10px 10px 0; background-color: #eee; background-size: cover; background-position: center; background-repeat: no-repeat; cursor: move; float: left;}
+.emptySpace {background-color: #eee; width: calc(20% - 10px); height: 150px; margin: 0 8px 8px 0; border: 1px dashed #555; float: left;}
+.newsFotos a.del {position: relative; display: block; top: 5px; left: 5px; width: 25px; height: 25px; background: #fff; background-image: url(../images/del.png); background-position: center; background-repeat: no-repeat; opacity: 0.8; transition: 0.3s;}
+.newsFotos a.del:hover {opacity: 1;}
+
+.kvartEdit {position: absolute; right: 0px; height: 40px; padding: 5px; border: 1px solid #ddd; background: #fff; transition: 0.5s;}
+.kvartEdit:hover {height: 400px;}
+
+.catButton {position: absolute; display: block; background: #ababab; top: 15px; right: 15px;}
+.catButton a {display: table-cell; padding: 9px 15px; font-size: 14px; color: #fff; border-right: 1px dotted #bbb;}
+.catButton a:hover {background: #fc0;}
+/*-- ПОДВАЛ --*/
+footer {width: 100%; height: 300px; background: #444;}

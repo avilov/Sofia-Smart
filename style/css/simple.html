@@ -1,0 +1,29 @@
+<block>
+    <div class="container">
+        <div id="ca-container" class="ca-container">
+            <div class="ca-wrapper">
+                <div class="ca-item">
+                    <div class="ca-item-main">
+                        <div class="ca-icon">
+                            <? 
+                            $date = date('Y-m-d'); $sql = "SELECT * FROM events WHERE public='yes' ORDER BY date DESC";
+                            $events = getData($sql);
+                            foreach ($events as $item) { $newDate = ChangeDate($item['date'],$word);?>
+                            <events>
+                                <time><p><?=$newDate['m'];?><br><span><?=$newDate['d'];?></span></p></time>
+                                <div class="description">
+                                    <span><?=$item['title'];?></span>
+                                    <article><?=$item['description'];?></article>
+                                    <links><p>Подробнее</p></links>
+                                    <description><?=$item['text'];?></description>
+                                </div>
+                            </events>
+                            <?}?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>

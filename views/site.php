@@ -18,6 +18,8 @@ $sql = "SELECT * FROM requisites WHERE id='1'"; $req = pageData($sql);
 </head>
 <body id="top">
 
+    <p>тест для ветки мастера</p>
+
     <div class="back"></div>
     <?
     include "views/pages/header.php"; 

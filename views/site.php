@@ -20,15 +20,15 @@ $sql = "SELECT * FROM requisites WHERE id='1'"; $req = pageData($sql);
 
     <div class="back"></div>
     <?
-    include "views/pages/header.php"; 
-    include "views/pages/main.php";
-    include "views/pages/holiday.php";
-    include "views/pages/calendar.php";
-    include "views/pages/events.php";
-    // include "views/pages/video.php";
-    include "views/pages/history.php";
-    include "views/pages/about.php";
-    include "views/pages/footer.php";
+    // include "views/pages/header.php"; 
+    // include "views/pages/main.php";
+    // include "views/pages/holiday.php";
+    // include "views/pages/calendar.php";
+    // include "views/pages/events.php";
+    // // include "views/pages/video.php";
+    // include "views/pages/history.php";
+    // include "views/pages/about.php";
+    // include "views/pages/footer.php";
     ?>
     <a id="back" href="#top" class="logo-top1"><img src="style/img/up.png"></a>
 

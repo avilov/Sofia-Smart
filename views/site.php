@@ -4,7 +4,7 @@ $sql = "SELECT * FROM requisites WHERE id='1'"; $req = pageData($sql);
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Благодать!!!</title>
+	<title>Благодать!!!!!1212!</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <!--Mobile Optimize-->
     <meta name="viewport" content="width=1280">

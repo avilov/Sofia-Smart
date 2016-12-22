@@ -4,7 +4,7 @@ $sql = "SELECT * FROM requisites WHERE id='1'"; $req = pageData($sql);
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Благодатьqwerty</title>
+	<title>Благодать</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <!--Mobile Optimize-->
     <meta name="viewport" content="width=1280">
@@ -20,15 +20,15 @@ $sql = "SELECT * FROM requisites WHERE id='1'"; $req = pageData($sql);
 
     <div class="back"></div>
     <?
-    // include "views/pages/header.php"; 
-    // include "views/pages/main.php";
-    // include "views/pages/holiday.php";
-    // include "views/pages/calendar.php";
-    // include "views/pages/events.php";
-    // // include "views/pages/video.php";
-    // include "views/pages/history.php";
-    // include "views/pages/about.php";
-    // include "views/pages/footer.php";
+    include "views/pages/header.php"; 
+    include "views/pages/main.php";
+    include "views/pages/holiday.php";
+    include "views/pages/calendar.php";
+    include "views/pages/events.php";
+    // include "views/pages/video.php";
+    include "views/pages/history.php";
+    include "views/pages/about.php";
+    include "views/pages/footer.php";
     ?>
     <a id="back" href="#top" class="logo-top1"><img src="style/img/up.png"></a>
 
